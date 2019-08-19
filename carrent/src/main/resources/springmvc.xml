@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:component-scan base-package="com.gxz"></context:component-scan>
+	<!-- 配置注解的映射器和适配器 这里面加入了ajax交互的json数据处理。自定义类型转化 拦截器等等 -->
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!--编码 -->
+		<property name="defaultEncoding" value="utf-8"></property>
+		<!--最大支持的文件大小 20M -->
+		<property name="maxUploadSize" value="21474836480"></property>
+		<!-- 文件上传的临时目录 -->
+		<property name="uploadTempDir" value="/upload/temp/"></property>
+	</bean>
+	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<mvc:exclude-mapping path="/login/toLogin*"/>
+			<mvc:exclude-mapping path="/login/checkLogin*"/>
+			<bean class="com.gxz.sys.interceptor.AppSessionInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<!-- 如果前端控制器配置的/ -->
+	<mvc:default-servlet-handler />
+
+</beans>

@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:03 +0800] "GET /car HTTP/1.1" 302 - http-bio-8081-exec-1 0
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:04 +0800] "GET /car/ HTTP/1.1" 200 2290 http-bio-8081-exec-3 1078
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:17 +0800] "POST /car/login/checkLogin.action HTTP/1.1" 200 4307 http-bio-8081-exec-4 239
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:17 +0800] "GET /car/desk/toDesk.action?_=1556461037741 HTTP/1.1" 200 3929 http-bio-8081-exec-6 134
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:18 +0800] "POST /car/menu/treeNode.action HTTP/1.1" 200 4386 http-bio-8081-exec-5 141
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:18 +0800] "POST /car/news/loadAllNews.action HTTP/1.1" 200 824 http-bio-8081-exec-8 78
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:18 +0800] "POST /car/news/loadAllNews.action HTTP/1.1" 200 824 http-bio-8081-exec-7 13
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:18 +0800] "POST /car/news/loadAllNews.action HTTP/1.1" 200 824 http-bio-8081-exec-10 11
+0:0:0:0:0:0:0:1 - - [28/Apr/2019:22:17:20 +0800] "POST /car/news/queryNewsById.action HTTP/1.1" 200 283 http-bio-8081-exec-10 7
