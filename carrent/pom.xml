@@ -15,7 +15,7 @@
         <jstl.version>1.2</jstl.version>
         <standard.version>1.1.2</standard.version>
 
-        <spring.version>4.3.17.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
         <jackson.version>2.8.9</jackson.version>
         <commons-logging.version>1.2</commons-logging.version>
         <log4j.version>1.2.17</log4j.version>
