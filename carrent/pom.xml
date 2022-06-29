@@ -30,7 +30,7 @@
         <pagehelper.version>5.1.8</pagehelper.version>
         <jsqlparser.version>1.3</jsqlparser.version>
 
-        <poi.version>3.17</poi.version>
+        <poi.version>4.1.1</poi.version>
         <codec.version>1.11</codec.version>
         <zxing.version>3.3.3</zxing.version>
         <pinyin4j.version>2.5.1</pinyin4j.version>
